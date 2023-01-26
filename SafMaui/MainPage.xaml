@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SafMaui.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="10"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.svg"
+                HeightRequest="100"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Storage Access Framework (SAF)"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+
+            <Label
+                Text="Demo of Portable Storage for Android&#10;                      with Maui"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="btnBrowse"
+                Text="Select External Storage"
+                Clicked="btnBrowse_Clicked"
+                HorizontalOptions="Center"
+                WidthRequest="300"   />
+
+            <Button
+                x:Name="btnCopyToExternalStorage"
+                Text="Copy to External Storage"
+                Clicked="btnCopyToExternalStorage_Clicked"
+                HorizontalOptions="Center"
+                WidthRequest="300" />
+
+            <Button
+                x:Name="btnCopyFromExternalStorage"
+                Text="Copy from External Storage"
+                Clicked="btnCopyFromExternalStorage_Clicked"
+                HorizontalOptions="Center"
+                WidthRequest="300" />
+
+            <!--<Button
+                x:Name="btnPickAndShow"
+                Text="Pick and Show"
+                Clicked="btnPickAndShow_Clicked"
+                HorizontalOptions="Center"
+                WidthRequest="300" />-->
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
