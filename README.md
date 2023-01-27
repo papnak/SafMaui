@@ -38,4 +38,8 @@ There is no way (afaik) to generate a default URI by code to the e.g. downloads 
 
 To call the methods in platform code from the shared project the successor of the Dependency Service is used. See both SafService.cs in the shared project and the platform project.
 
+Here you can find some infos about that here:
+https://blog.taranissoftware.com/platform-specific-code-using-partial-classes-in-net-maui
+https://www.davidbritch.com/search?q=dependencyservice
+
 A Maui built in way to access (only reading) external files is the FilePicker in Maui. No SAF is needed (only Permissions.StorageRead). See my example FilePickerTest
